@@ -19,26 +19,26 @@ public class SimpleCalculatorTest {
 	}
 	
 		@Test 
-	public void testMultError() {
+	public void testMultFixed() {
 		SimpleCalculator calc = new SimpleCalculator();
-		assertEquals(calc.add(4, 4), 16);
+		assertEquals(calc.mult(4, 4), 16);
 	}
 	
 	@Test
-	public void testMultError1() {
+	public void testMultFixed1() {
 		SimpleCalculator calc = new SimpleCalculator();
-		assertEquals(calc.minus(4, 4), 16);
+		assertEquals(calc.mult(4, 5), 20);
 	}
 	
 	@Test 
-	public void testDivideError() {
+	public void testDivideFixed() {
 		SimpleCalculator calc = new SimpleCalculator();
-		assertEquals(calc.add(8, 4), 2);
+		assertEquals(calc.divide(8, 4), 2);
 	}
 	
 	@Test
-	public void testDivideError1() {
+	public void testDivideFixed1() {
 		SimpleCalculator calc = new SimpleCalculator();
-		assertEquals(calc.minus(8, 4), 2);
+		assertEquals(calc.divide(4, 4), 1);
 	}
 }
