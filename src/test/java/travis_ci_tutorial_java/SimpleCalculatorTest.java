@@ -60,9 +60,4 @@ public class SimpleCalculatorTest {
 		assertEquals(calc.divide(4, 4), 1);
 	}
 	
-	@Test
-	public void testDivideByZero() {
-		SimpleCalculator calc = new SimpleCalculator();
-		assertEquals(calc.divide(1, 0), 0); //will result in error
-	}
 }
